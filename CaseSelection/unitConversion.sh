@@ -24,7 +24,7 @@ case $choice in
 		 read -p "Enter feets : " feet
 		 metres=`echo " sacle=2; $feet*0.304" | bc -l`;
 		 echo "$feet in : " $metres
-       ;;
+		 ;;
 	4)
 		read -p "Enter metres : " metre
 		feet=`echo " sacle=2; $metre/0.304" | bc -l`;
