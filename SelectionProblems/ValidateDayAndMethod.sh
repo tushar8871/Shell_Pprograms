@@ -9,9 +9,13 @@ year=`echo $date | awk -F/ '{print $3}'`;
 june=6
 march=3
 
-if [ $date1 -eq 20 ] && [ $month -le $june ] || [ $month -ge $march ]
+if [ $month -eq $march ] && [ $date1 -lt 20 ] 
 then
-	echo "Yes the $date and $month is present between March 20 and June 20" 
-else
 	echo "Not in between March 20 and June 20"
+elif [ $month -eq $june ] && [ $date1 -gt 20 ]
+then
+	echo "Not in between March 20 and June 20"
+elif [ $month -ge $march ] && [ $month -le $june ]
+then
+	echo "Yes the $date and $month is present between March 20 and June 20"
 fi
