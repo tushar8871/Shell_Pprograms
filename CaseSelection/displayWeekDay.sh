@@ -24,4 +24,7 @@ case $day in
 	6)
 		echo "Saturday"
 		;;
+	*)
+		echo "Wrong Input"
+		;;
 esac
