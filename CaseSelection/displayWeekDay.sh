@@ -1,35 +1,27 @@
 #!/bin/bash -x
 
-SUNDAY=0;
-MONDAY=1;
-TUESDAY=2;
-WEDNESDAY=3;
-THURSDAY=4;
-FRIDAY=5;
-SATURDAY=6;
-
-day=$((RANDOM%7));
+read -p "Enter week day from 0-6" day
 
 case $day in
-	$SUNDAY)
+	0)
 		echo "Sunday"
 		;;
-   $MONDAY)
-      echo "Monday"
-      ;;
-   $TUESDAY)
-      echo "Tuesday"
-      ;;
-   $WEDNESDAY)
-      echo "Wednesday"
-      ;;
-   $THURSDAY)
-      echo "Thursday"
-      ;;
-   $FRIDAY)
-      echo "Friday"
-      ;;
-   $SATURDAY)
-      echo "Saturday"
-      ;;
+	1)
+		echo "Monday"
+		;;
+	2)
+		echo "Tuesday"
+		;;
+	3)
+		echo "Wednesday"
+		;;
+	4)
+		echo "Thursday"
+		;;
+	5)
+		echo "Friday"
+		;;
+	6)
+		echo "Saturday"
+		;;
 esac
