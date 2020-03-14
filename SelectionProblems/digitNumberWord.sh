@@ -1,6 +1,6 @@
 #!/bin/bash -x
 
-singleDigit=$((RANDOM%10));
+read -p "Enter single digit value : " singleDigit
 
 if [ $singleDigit -eq 0 ]
 then
@@ -29,6 +29,9 @@ then
 elif [ $singleDigit -eq 8 ]
 then
 	echo "eight"
-else
+elif [ $singleDigit -eq 9 ]
+then
 	echo "nine"
+else
+	echo "Please enter single digit value"
 fi
