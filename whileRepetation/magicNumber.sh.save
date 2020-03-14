@@ -1,3 +1,0 @@
-#!/bin/bash -x
-
-echo "Think a number between 1 to 100"		
