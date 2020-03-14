@@ -8,4 +8,3 @@ do
 	result=`echo "sale=2; ($result+(1/$num))" | bc -l `;
 done
 
-echo $result
