@@ -12,23 +12,22 @@ read choice;
 case $choice in
 	1)
 		read -p "Enter feets : " feet
-		inch=`echo " sacle=2; $feet/12" | bc -l`;
-		echo "$feet in : " $inch
+		inch=`echo " scale=2; $feet/12" | bc -l`;
 		;;
 	2)
 		read -p "Enter Inches : " inch
-		feet=`echo " sacle=2; $inch*12" | bc -l`;
-		echo "$inch in : " $feet
+		feet=`echo " scale=2; $inch*12" | bc -l`;
 		;;
 	3)
-		 read -p "Enter feets : " feet
-		 metres=`echo " sacle=2; $feet*0.304" | bc -l`;
-		 echo "$feet in : " $metres
-		 ;;
+		read -p "Enter feets : " feet
+		metres=`echo " scale=2; $feet*0.304" | bc -l`;
+		;;
 	4)
 		read -p "Enter metres : " metre
-		feet=`echo " sacle=2; $metre/0.304" | bc -l`;
-		echo "$feet in : " $feet
+		feet=`echo " scale=2; $metre/0.304" | bc -l`;
+		;;
+	*)
+		echo "Wrong Input !"
 		;;
 esac
 	
