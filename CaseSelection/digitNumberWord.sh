@@ -1,48 +1,37 @@
 #!/bin/bash -x
 
-ZERO=0;
-ONE=1;
-TWO=2;
-THREE=3;
-FOUR=4;
-FIVE=5;
-SIX=6;
-SEVEN=7;
-EIGHT=8;
-NINE=9;
-singleDigit=$((RANDOM%10));
-
+read -p "Enter single digit i.e 0-9 " singleDigit
 
 case $singleDigit in
-	$ZERO)
+	0)
 		echo "zero"
 		;;
-	$ONE)
+	1)
 		echo "one"
 		;;
-	$TWO)
+	2)
 		echo "two"
 		;;
-	$THREE)
+	3)
 		echo "three"
 		;;
-	$FOUR)
+	4)
 		echo "four"
 		;;
-	$FIVE)
+	5)
 		echo "five"
 		;;
-   $SIX)
-      echo "six"
-      ;;
-   $SEVEN)
-      echo "seven"
-      ;;
-   $EIGHT)
-      echo "eight"
-      ;;
-   $NINE)
-      echo "nine"
-      ;;
+	6)
+		echo "six"
+		;;
+	7)
+		echo "seven"
+		;;
+	8)
+		echo "eight"
+		;;
+	9)
+		echo "nine"
+		;;
 esac
 
