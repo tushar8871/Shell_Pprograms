@@ -1,6 +1,6 @@
 #!/bin/bash -x
 
-weekDay=$((RANDOM%7));
+read -p "Enter week day from 0-6 " weekDay
 
 if [ $weekDay -eq 0 ]
 then
