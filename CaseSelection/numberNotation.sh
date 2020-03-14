@@ -1,7 +1,7 @@
 #!/bin/bash -x
 
 
-read -p "Enter number : " number
+read -p "Enter number and it should be like 1,10,100,etc and less than million: " number
 
 case $number in
 	1)
@@ -22,5 +22,11 @@ case $number in
    	100000)
       		echo "Lakh "
       		;;
+	1000000)
+		echo "Million"
+		;;
+	*)
+		echo "Input must below A million"
+		;;
 esac
 
