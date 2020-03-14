@@ -7,4 +7,3 @@ for (( num=1; $num<=number ;num++))
 do
 	result=$(($result*$num));
 done
-
