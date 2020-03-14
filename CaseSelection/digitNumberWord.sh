@@ -33,5 +33,8 @@ case $singleDigit in
 	9)
 		echo "nine"
 		;;
+	*)
+		echo "Wrong input !"
+		;;
 esac
 
