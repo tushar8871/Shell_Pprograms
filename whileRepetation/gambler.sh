@@ -5,14 +5,13 @@ read -p "Enter goal amount : " GOAL
 
 counter=0;
 i=0;
-tempWallet=$walletAmount;
 
 while true
 do
 	bet=$((RANDOM%2));
 	if [ $bet -eq 0 ]
 	then
-		walletAmount=$(($walletAmount-$bet));
+		walletAmount=$(($walletAmount-1));
 		((i++));
 	else
 		walletAmount=$(($walletAmount+$bet));
