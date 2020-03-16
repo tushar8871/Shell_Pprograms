@@ -1,7 +1,6 @@
 #!/bin/bash -x
 
 counter=0;
-#array=( [0]=0 [1]=0 [2]=0 [3]=0 [4]=0 [5]=0 )
 
 while [[ ${array[$number]} -ne 10 ]]
 do
@@ -19,6 +18,9 @@ do
 	fi
 done
 
-echo "${array[@]}"
+for var in ${!array[@]}
+do
+	echo "$(($var+1)) : ${array[$var]}"
+done
 echo "Maximum times come : $(($max+1))"
 echo "Minimum times come : $(($min+1))"
