@@ -25,7 +25,7 @@ do
 			echo "March : ${birthArray[$counter]}"
 			;;
 		3)
-         echo "April : ${birthArray[$counter]}"
+			echo "April : ${birthArray[$counter]}"
 			;;
 		4)
 			echo "May : ${birthArray[$counter]}"
