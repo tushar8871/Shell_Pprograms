@@ -1,7 +1,7 @@
 #!/bin/bash -x
 
 counter=0;
-array=( [0]=0 [1]=0 [2]=0 [3]=0 [4]=0 [5]=0 )
+#array=( [0]=0 [1]=0 [2]=0 [3]=0 [4]=0 [5]=0 )
 
 while [[ ${array[$number]} -ne 10 ]]
 do
