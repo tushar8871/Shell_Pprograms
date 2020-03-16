@@ -17,9 +17,12 @@ function isPalindrome(){
 }
 
 counter=0;
-for (( val=10; val<=100;val++ ))
+for (( val=0; val<=100;val++ ))
 do
-	array[((counter++))]=$( isPalindrome $val )
+	if [ $val -ge 10 ]
+	then
+		array[((counter++))]=$( isPalindrome $val )
+	fi
 done
 
 ${array[@]}
